@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML / Forms</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    />
+    <script
+      type="text/javascript"
+      src="{{url_for('static', filename='script/script.js')}}"
+    ></script>
+  </head>
+  <body>
+    <h2>HTML / Forms!</h2>
+
+    <form action="/submit" method="post" onsubmit="validateForm(event)">
+      <label for="science">Science:</label>
+      <input type="text" id="science" name="science" value="0" />
+
+      <label for="math">Math:</label>
+      <input type="text" id="math" name="math" value="0" />
+
+      <label for="english">English:</label>
+      <input type="text" id="english" name="english" value="0" />
+
+      <label for="history">History:</label>
+      <input type="text" id="history" name="history" value="0" />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
