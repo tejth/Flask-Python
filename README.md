@@ -11,3 +11,9 @@ Contains Two Projects that helped me to learn flask web application framework.
   <li>Handling get and post methods</li>
   <li>Jinja2 Template Engine </li>
 </ul>
+
+# Installing Flask
+```pip install flask ```
+
+# Running file
+``` python main.py ```
