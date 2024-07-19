@@ -12,6 +12,7 @@ Contains Two Projects that helped me to learn flask web application framework.
   <li>Jinja2 Template Engine </li>
   <li>Database Integration</li>
   <li>Rest Api (Representaional State Transfer Application Programming Interface)</li>
+  <li>Login and Authentication</li>
 </ul>
 
 # Installing Flask
