@@ -10,6 +10,8 @@ Contains Two Projects that helped me to learn flask web application framework.
   <li>Integrating HTML , CSS AND JS</li>
   <li>Handling get and post methods</li>
   <li>Jinja2 Template Engine </li>
+  <li>Database Integration</li>
+  <li>Rest Api (Representaional State Transfer Application Programming Interface)</li>
 </ul>
 
 # Installing Flask
@@ -27,7 +29,8 @@ https://github.com/user-attachments/assets/72e0e470-d2b4-4c01-b7ca-10f09935fcb0
 # Project 3 :- Integration with database
 https://github.com/user-attachments/assets/3260b954-be76-4afc-82c3-cc12691f5aee
 
-# Project 4 :- Rest API (Handling get ,post , delete and patch request)
+# Project 4 :- Rest API (Handling get ,post , delete and patch request) 
+``` pip install -r requirements.txt ``` 
 
 
 
