@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask Auth</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 4.5rem; /* Adjust based on your navbar height */
+      }
+      nav {
+        background-color: #007bff;
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 20px;
+      }
+      .alert {
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .alert-success {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+      }
+      .alert-danger {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+      }
+    </style>
+
+    <!-- Include your CSS or Bootstrap here -->
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home Page |</a>
+
+      {% if 'user_id' in session %}
+      <a href="/dashboard">Dashboard |</a>
+      {% else %}
+      <a href="/login">Login |</a>
+      <a href="/register">Register</a>
+      {% endif %}
+
+      <div>
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %} {% endif %} {% endwith %}
+      </div>
+    </nav>
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <!-- Include your JavaScript if needed -->
+  </body>
+</html>
