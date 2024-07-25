@@ -33,6 +33,11 @@ https://github.com/user-attachments/assets/3260b954-be76-4afc-82c3-cc12691f5aee
 # Project 4 :- Rest API (Handling get ,post , delete and patch request) 
 ``` pip install -r requirements.txt ``` 
 
+# Project 5:- User Authentication (Register , Login in / Log out / Dashboard)
+
+https://github.com/user-attachments/assets/153d72d1-45e0-48f7-8076-f28c443e1427
+
+
 
 
 
